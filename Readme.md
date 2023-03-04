@@ -12,7 +12,7 @@ The packages requires to run the code:
 
 To use it, run the code and let the machine learning to do the learning, it will take some times depending on the cpu or gpu performance (depends on which device tensorflow on but it is recommend to run on gpu as it is faster).
 
-After the machine learning has completed its learning, an application will appear that shows a screenshot of a desktop. Now open a paint or any equavalent app that can be drawn onto, and align paint to the screenshot of a desktop. After that, put a black background on the paint and enjoy draw any number with a white. 
+After the machine learning has completed its learning, an application will appear that shows a screenshot of a desktop. Now open a paint or any equavalent app that can be drawn onto, and align paint to the screenshot of a desktop. After that, put a black background on the paint and enjoy draw any number with a white colour. 
 
 ## Note to take about this project
 

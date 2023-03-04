@@ -13,6 +13,9 @@ left = 100
 width = 400
 height = 400
 
+timeStop = 2 
+
+#Press q to quit the program
 
 mnist=tf.keras.datasets.mnist
 
@@ -61,10 +64,10 @@ with mss.mss() as sct:
         print("Number: ",np.argmax(test_pred))
 
 
-        # Press "q" to quit
+        
         if cv2.waitKey(25) & 0xFF == ord("q"):
             cv2.destroyAllWindows()
             break
         clear_output(wait=True)
-        time.sleep(2)
+        time.sleep(timeStop)
         

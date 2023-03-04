@@ -19,9 +19,11 @@ timeStop = 2
 
 mnist=tf.keras.datasets.mnist
 
+# Load MNIST datasets
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
 x_train,x_test =x_train/255.0, x_test/255.0
 
+# The machine learning model 
 model = tf.keras.models.Sequential([
     tf.keras.layers.Flatten(input_shape=(28,28)),
     tf.keras.layers.Dense(128,activation='relu'),
@@ -37,8 +39,7 @@ model.compile(optimizer='adam',
 
 model.fit(x_train, y_train, epochs=10)
 
-
-
+# To read input from the user
 with mss.mss() as sct:
 
     monitor = {"top": top, "left": left, "width": width, "height": height}
